@@ -9,13 +9,9 @@ A mobile-first React landing page for an English-learning brand, built with Vite
 [![Live Site](https://img.shields.io/badge/Live-fiks9.github.io%2FLinguist--Academy-fed000?style=flat-square)](https://fiks9.github.io/Linguist-Academy/)
 
 ## 🌐 Live Demo
-
-**[https://fiks9.github.io/Linguist-Academy/](https://fiks9.github.io/Linguist-Academy/)**
-
 <a href="https://fiks9.github.io/Linguist-Academy/" target="_blank">
   <img src="https://api.microlink.io/?url=https://fiks9.github.io/Linguist-Academy/&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800" alt="Linguist Academy live preview — click to open the site" width="100%" />
 </a>
-
 ### [🌐 &nbsp;View Live Demo →](https://fiks9.github.io/Linguist-Academy/)
 
 
