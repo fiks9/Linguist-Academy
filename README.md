@@ -44,6 +44,45 @@ npm run build
 npm run preview
 ```
 
+## Deploy to GitHub Pages
+
+This repo ships with a ready-to-use GitHub Actions workflow at
+`.github/workflows/deploy.yml`. It auto-detects whether the repo is a
+**user/org page** (`owner.github.io`) or a **project page** and sets the
+correct Vite `base` path during build — no manual config needed.
+
+### One-time setup
+
+1. Push this project to a new GitHub repo:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/<your-username>/<repo-name>.git
+   git push -u origin main
+   ```
+2. On GitHub, go to **Settings → Pages**.
+3. Under **Build and deployment → Source**, choose **GitHub Actions**.
+4. Push to `main` (or click *Run workflow* on the Actions tab) — the site
+   will be published at:
+   - Project page → `https://<user>.github.io/<repo-name>/`
+   - User/org page → `https://<user>.github.io/`
+
+### How `base` is handled
+
+- **Local dev** → `base = '/'` (no env var set).
+- **CI build** → workflow exports `BASE_PATH=/<repo-name>/` (or `/` for
+  user pages) and `vite.config.js` reads it from `process.env.BASE_PATH`.
+- All references to public assets use `import.meta.env.BASE_URL` (see the
+  hero image in `HeroSection.jsx`) so they resolve correctly on either path.
+
+### Custom domain
+
+Add a `CNAME` file inside `public/` containing your domain
+(`example.com`). The workflow copies it into `dist/` automatically. Then
+configure the custom domain in **Settings → Pages**.
+
 ## Customization
 
 - **Spots remaining** — pass `<CTASection spots={5} />` in `src/App.jsx`.

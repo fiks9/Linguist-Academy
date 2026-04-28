@@ -70,7 +70,7 @@ export default function HeroSection() {
               alt="Glowing nodes connecting in a network — visualizing language learning"
               loading="eager"
               className="h-full w-full object-cover"
-              src="/hero.png"
+              src={`${import.meta.env.BASE_URL}hero.png`}
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-tertiary-container/40 via-transparent to-transparent" />
           </div>
