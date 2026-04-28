@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-on-background font-body antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Lexend', system-ui, sans-serif;
+  }
+  ::selection {
+    @apply bg-secondary-container text-on-secondary-container;
+  }
+}
+
+@layer utilities {
+  /* Reveal pattern: hidden by default; once .is-visible is added it plays
+     the fade-up animation. Uses animation (not transition) so element-level
+     hover transitions stay free. */
+  .reveal {
+    opacity: 0;
+  }
+  .reveal.is-visible {
+    animation: fade-up 0.7s ease-out both;
+    animation-delay: var(--reveal-delay, 0ms);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal,
+    .reveal.is-visible {
+      opacity: 1 !important;
+      transform: none !important;
+      animation: none !important;
+    }
+  }
+}
