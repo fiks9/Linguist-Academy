@@ -16,9 +16,8 @@ A mobile-first React landing page for an English-learning brand, built with Vite
   <img src="https://api.microlink.io/?url=https://fiks9.github.io/Linguist-Academy/&screenshot=true&meta=false&embed=screenshot.url&viewport.width=1280&viewport.height=800" alt="Linguist Academy live preview — click to open the site" width="100%" />
 </a>
 
-> Click the screenshot to open the live site. The preview is generated live by [thum.io](https://www.thum.io) — it always reflects the current state of the deployed site.
->
-> _Prefer a static screenshot?_ Drop your own at `docs/screenshot.png` and swap the `src` above (instructions in [Adding a screenshot](#adding-a-screenshot)).
+> Click the screenshot to open the live site.
+
 
 ## ✨ Features
 
