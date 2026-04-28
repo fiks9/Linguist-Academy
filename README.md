@@ -13,7 +13,7 @@ A mobile-first React landing page for an English-learning brand, built with Vite
 **[https://fiks9.github.io/Linguist-Academy/](https://fiks9.github.io/Linguist-Academy/)**
 
 <a href="https://fiks9.github.io/Linguist-Academy/" target="_blank">
-  <img src="https://image.thum.io/get/width/1200/crop/750/https://fiks9.github.io/Linguist-Academy/" alt="Linguist Academy live preview — click to open the site" width="100%" />
+  <img src="//image.thum.io/get/http://www.google.com/" alt="Linguist Academy live preview — click to open the site" width="100%" />
 </a>
 
 > Click the screenshot to open the live site. The preview is generated live by [thum.io](https://www.thum.io) — it always reflects the current state of the deployed site.
