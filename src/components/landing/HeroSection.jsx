@@ -8,7 +8,7 @@ export default function HeroSection() {
             style={{ animationDelay: '60ms' }}
           >
             <span className="h-2 w-2 rounded-full bg-secondary-container" />
-            New 2025 Cohort Open
+            New 2026 Cohort Open
           </span>
           <h1
             className="font-display text-display-xl text-on-background motion-safe:animate-fade-up"
